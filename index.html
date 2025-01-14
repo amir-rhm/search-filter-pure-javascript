@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>search</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="filters">
+      <div class="filters__row filters__row--border-bottom">
+        <div class="filters__name">
+          <input type="text" placeholder="Search name" class="filters__input  filters__input--name" autofocus>
+        </div>
+
+
+      </div>
+      <div class="filters__row filters__row--tabs">
+        <span class="filters__button filters__button--active" data-filter="">All</span>
+        <span class="filters__button" data-filter="tech">Tech</span>
+        <span class="filters__button" data-filter="clothing">Clothing</span>
+        <span class="filters__button" data-filter="health">Health</span>
+      </div>
+      <div class="content">
+        <div class="products">
+        </div>
+      </div>
+    </div>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

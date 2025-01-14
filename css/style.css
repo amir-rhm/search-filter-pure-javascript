@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #495057;
+    --bg-color: #e0f2fe;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: var(--bg-color); */
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 10px;
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--primary-color);
+    margin-bottom: 80px;
+}
+
+.filters {
+    margin-bottom: 60px;
+}
+
+.content {}
+
+
+.header__title {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.filters {}
+
+.filters__row {
+    margin: 36px 0 36px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.filtetrs__row--tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.filters__button {
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 8px 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.filters__button--active{
+    background: transparent;
+    color: var(--black);
+}
+.filters__name{
+    width: 70%;
+    margin: 0 auto;
+}
+.filters__input {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #495057;
+    padding: 16px;
+    outline: none;
+    background-color: transparent;
+}
+
+.filters__row--tabs{
+    justify-content: center;
+}
+
+.filters__row--border-bottom{
+    padding-bottom: 24px;
+    margin-bottom: 80px;
+    /* border-bottom: 2px solid #777; */
+}
+
+.filters__input::placeholder {}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    /* column-gap: 80px; */
+}
+
+.products__item {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 12px;
+    flex-basis: 28%;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.2);
+}
+
+.products__image-wrapper {
+    margin-bottom: 16px;
+}
+
+.products__image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.products__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.products__price {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width :768px){
+    .products__item {
+        flex-basis: 44%;
+    }
+}
+
+
+@media (max-width :576px){
+    .products__item {
+        flex-basis: 100%;
+    }
+}
